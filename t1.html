@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel to India</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Verdana", sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      header {
+        background: #333;
+        color: #fff;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      header h1 {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+
+      .container {
+        background-color: goldenrod;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        border-radius: 10px     ;
+      }
+
+      section {
+        margin-bottom: 50px;
+      }
+
+      .intro {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .intro img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .intro-text {
+        max-width: 500px;
+      }
+
+      .intro-text h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        color: #555;
+      }
+
+      .intro-text p {
+        font-size: 1.1rem;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .attractions {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .attraction-card {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .attraction-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .attraction-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .attraction-card h3 {
+        font-size: 1.8rem;
+        margin-top: 15px;
+      }
+
+      .attraction-card p {
+        font-size: 1rem;
+        color: #777;
+        margin-top: 10px;
+      }
+
+      .gallery {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .gallery h2 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+        color: #555;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      footer {
+        background: #222;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      footer p {
+        font-size: 1rem;
+      }
+
+      /* Media Queries for Responsiveness */
+      @media (max-width: 768px) {
+        .intro {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .intro img {
+          width: 80%;
+          max-width: 300px;
+        }
+
+        .intro-text {
+          text-align: center;
+        }
+
+        .container {
+          padding: 20px;
+        }
+
+        .attractions {
+          grid-template-columns: 1fr;
+        }
+
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: gold">Explore the Rich History of India</h1>
+    </header>
+
+    <div class="container">
+      <section class="intro">
+        <img src="p1.jpeg" alt="Taj Mahal" />
+        <div class="intro-text">
+          <h2>Experience the Wonders of India</h2>
+          <p>
+            India is home to some of the world's most remarkable and ancient
+            landmarks. The Taj Mahal, Red Fort, and Gateway of India are just a
+            few of the many iconic sites that draw visitors from across the
+            globe.
+          </p>
+          <p>
+            Discover the rich cultural history and architectural marvels that
+            make India a truly unique destination for travelers.
+          </p>
+        </div>
+      </section>
+
+      <section class="attractions">
+        <div class="attraction-card">
+          <img src="p2.jpg" alt="Qutub Minar" />
+          <h3>Qutub Minar</h3>
+          <p>
+            The Qutub Minar in Delhi is a towering structure, a testament to the
+            craftsmanship of the Delhi Sultanate, and a UNESCO World Heritage
+            site.
+          </p>
+        </div>
+        <div class="attraction-card">
+          <img src="p3.jpg" alt="Red Fort" />
+          <h3>Red Fort</h3>
+          <p>
+            A symbol of India's Mughal history, the Red Fort is an architectural
+            masterpiece and an important site for Indian independence.
+          </p>
+        </div>
+        <div class="attraction-card">
+          <img src="p4.jpeg" alt="Gateway of India" />
+          <h3>Gateway of India</h3>
+          <p>
+            Located in Mumbai, the Gateway of India is a majestic structure
+            built to commemorate the visit of King George V and Queen Mary to
+            India in 1911.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Discover India</p>
+    </footer>
+  </body>
+</html>
